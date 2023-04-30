@@ -160,6 +160,7 @@ cython_debug/
 #.idea/
 
 *.zip
-data/
+data/*
 0.tiff
 *.gif
+.vscode
