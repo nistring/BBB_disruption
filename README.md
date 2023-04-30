@@ -7,6 +7,7 @@ mkdir Brain_FLAIR
 cd Brain_FLAIR
 git clone https://github.com/nistring/Brain_FLAIR.git
 conda create -n FLAIR python==3.10
+conda activate FLAIR
 pip install -r requirements.txt
 ```
 Place your DICOM files in `data/`
