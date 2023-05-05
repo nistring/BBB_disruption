@@ -1,11 +1,10 @@
-import pydicom
 import os
 import numpy as np
 import cv2
 from scipy.ndimage import zoom
+import nibabel as nib
 
-
-def load_3d(dir):
+def load_3d(dir, subject):
     """Reads a MRI DICOM sequence and returns 3-dimensionally stacked array
     Adopted from https://pydicom.github.io/pydicom/stable/auto_examples/image_processing/reslice.html#sphx-glr-auto-examples-image-processing-reslice-py
 
@@ -17,52 +16,55 @@ def load_3d(dir):
         (float, float, float): Aspect ratios
     """
 
-    files = []
-    for file in sorted(os.listdir(dir)):
-        files.append(pydicom.dcmread(os.path.join(dir, file)))
+    # files = []
+    # for file in sorted(os.listdir(dir)):
+    #     files.append(pydicom.dcmread(os.path.join(dir, file)))
 
-    print("file count: {}".format(len(files)))
+    # print("file count: {}".format(len(files)))
 
-    # skip files with no SliceLocation (eg scout views)
-    slices = []
-    skipcount = 0
-    for f in files:
-        if hasattr(f, "SliceLocation"):
-            slices.append(f)
-        else:
-            skipcount = skipcount + 1
+    # # skip files with no SliceLocation (eg scout views)
+    # slices = []
+    # skipcount = 0
+    # for f in files:
+    #     if hasattr(f, "SliceLocation"):
+    #         slices.append(f)
+    #     else:
+    #         skipcount = skipcount + 1
 
-    print("skipped, no SliceLocation: {}".format(skipcount))
+    # print("skipped, no SliceLocation: {}".format(skipcount))
 
-    # ensure they are in the correct order
-    slices = sorted(slices, key=lambda s: s.SliceLocation, reverse=True)
+    # # ensure they are in the correct order
+    # slices = sorted(slices, key=lambda s: s.SliceLocation, reverse=True)
 
-    # pixel aspects, assuming all slices are the same
-    ps = slices[0].PixelSpacing
-    ss = slices[0].SliceThickness
+    # # pixel aspects, assuming all slices are the same
+    # ps = slices[0].PixelSpacing
+    # ss = slices[0].SliceThickness
 
-    ax_aspect = ps[1] / ps[0]
-    sag_aspect = ss / ps[1]
-    cor_aspect = ss / ps[0]
-    zoom_ratio = sag_aspect
-    sag_aspect /= zoom_ratio
-    cor_aspect /= zoom_ratio
+    # ax_aspect = ps[1] / ps[0]
+    # sag_aspect = ss / ps[1]
+    # cor_aspect = ss / ps[0]
+    # zoom_ratio = sag_aspect
+    # sag_aspect /= zoom_ratio
+    # cor_aspect /= zoom_ratio
+    img3d = nib.load(os.path.join(dir, subject)).get_fdata()
+    img3d = np.transpose(img3d, (1, 0, 2))[:,:,::-1]
 
-    # create 3D array
-    img_shape = list(slices[0].pixel_array.shape)
-    img_shape.append(len(slices))
-    img3d = np.zeros(img_shape)
+    # # create 3D array
+    # img_shape = list(slices[0].pixel_array.shape)
+    # img_shape.append(len(slices))
+    # img3d = np.zeros(img_shape)
 
-    # fill 3D array with the images from the files
-    for i, s in enumerate(slices):
-        img2d = s.pixel_array
-        img3d[:, :, i] = img2d
+    # # fill 3D array with the images from the files
+    # for i, s in enumerate(slices):
+    #     img2d = s.pixel_array
+    #     img3d[:, :, i] = img2d
 
-    # applay interpolation in z-direction
-    img3d = zoom(img3d, (1, 1, zoom_ratio), mode="nearest")
-    img3d[img3d < 0] = 0
+    # # apply interpolation in z-direction
+    # zoom_ratio = 1
+    # img3d = zoom(img3d, (1, 1, zoom_ratio), mode="nearest")
+    # img3d[img3d < 0] = 0
 
-    return img3d, (ax_aspect, sag_aspect, cor_aspect)
+    return img3d, (1,12,12)# (ax_aspect, sag_aspect, cor_aspect)
 
 
 def apply_colormap(gray3d):

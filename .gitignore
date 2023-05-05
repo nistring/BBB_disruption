@@ -163,4 +163,12 @@ cython_debug/
 *.dcm
 0.tiff
 *.gif
+*.gz
 .vscode/
+ANTs/
+build/
+fsl/
+install/
+finstaller.py
+installANTs.sh
+results/*/combined/*.png
