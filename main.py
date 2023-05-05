@@ -38,9 +38,9 @@ def loader(subject):
     subtracted = after_img - before_img
     subtracted_max = 512
 
-    counts, bins = np.histogram(subtracted, range=(1, subtracted_max), bins = subtracted_max)
-    plt.stairs(counts, bins)
-    plt.savefig(os.path.join('results', subject, "Histogram_of_subtracted.png"))
+    # counts, bins = np.histogram(subtracted, range=(1, subtracted_max), bins = subtracted_max)
+    # plt.stairs(counts, bins)
+    # plt.savefig(os.path.join('results', subject, "Histogram_of_subtracted.png"))
 
     norm = 255.0 / after_img.max()
     before_img = np.array(before_img * norm, dtype=np.uint8)
@@ -57,13 +57,14 @@ def loader(subject):
     return before_img, after_img, combined, aspects
 
 
-def make_gif(subject):
+def make_gif(subject_file):
+    subject = subject_file.split('.')[0].split('.')[0]
     results_dir = os.path.join("results", subject)
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
 
     before_img, after_img, combined, aspects = loader(
-        subject
+        subject_file
     )
 
     ax_aspect, sag_aspect, cor_aspect = aspects

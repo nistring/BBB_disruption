@@ -171,4 +171,4 @@ fsl/
 install/
 finstaller.py
 installANTs.sh
-results/Subject_[1-5].nii.bz/combined/*
+results/**/combined/*
