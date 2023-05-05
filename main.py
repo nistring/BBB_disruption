@@ -8,7 +8,7 @@ from multiprocessing import Pool, cpu_count
 import os
 import keyboard
 
-duration = 333
+duration = 500
 before_dir = "BrainPrep/data/FLAIRBrain/1/"
 after_dir = "BrainPrep/data/FLAIR/2/"
 
@@ -18,8 +18,6 @@ def loader(subject):
     before_img, aspects = load_3d(before_dir, subject)
     after_img, _ = load_3d(after_dir, subject)
     after_img[before_img == 0] = 0
-
-
 
     # # calculate structural similarity score
     # score, diff = ssim(
@@ -48,7 +46,7 @@ def loader(subject):
     before_img = np.array(before_img * norm, dtype=np.uint8)
     after_img = np.array(after_img * norm, dtype=np.uint8)
 
-    vmin, vmax = 16, 256
+    vmin, vmax = 48, 304
     combined = np.clip((subtracted - vmin) / (vmax - vmin), 0, 1)
     mask = np.logical_or(combined >= 1, combined <= 0)
     mask = np.stack([mask, mask, mask], axis=-1)
