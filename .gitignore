@@ -165,10 +165,8 @@ cython_debug/
 *.gif
 *.gz
 .vscode/
-ANTs/
-build/
-fsl/
-install/
-finstaller.py
-installANTs.sh
-results/**/combined/*
+results
+data
+ANTs
+fsl
+install

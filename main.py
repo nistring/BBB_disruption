@@ -2,75 +2,31 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import os
 import numpy as np
-from skimage.metrics import structural_similarity as ssim
 from utils import *
 from multiprocessing import Pool, cpu_count
-import os
-import keyboard
+from fsl.wrappers import bet, fast, fslmaths
+import nibabel as nib
+import subprocess
+from scipy.ndimage import zoom
+from skimage.filters import threshold_otsu
+import pandas as pd
+
 
 duration = 500
-before_dir = "BrainPrep/data/FLAIRBrain/1/"
-after_dir = "BrainPrep/data/FLAIR/2/"
 
 
-def loader(subject):
-    # convert into numpy array
-    before_img, aspects = load_3d(before_dir, subject)
-    after_img, _ = load_3d(after_dir, subject)
-    after_img[before_img == 0] = 0
-
-    # # calculate structural similarity score
-    # score, diff = ssim(
-    #     before_img,
-    #     after_img,
-    #     full=True,
-    #     data_range=after_img.max(),
-    #     win_size=3,
-    #     gradient=False,
-    # )
-
-    # # normalization
-    # diff = np.clip(1 - diff, 0, 1)
-    # diff = (diff * 255).astype("uint8")
-    # diff = apply_colormap(diff)
-
-    
-    subtracted = after_img - before_img
-    subtracted_max = 512
-
-    # counts, bins = np.histogram(subtracted, range=(1, subtracted_max), bins = subtracted_max)
-    # plt.stairs(counts, bins)
-    # plt.savefig(os.path.join('results', subject, "Histogram_of_subtracted.png"))
-
-    norm = 255.0 / after_img.max()
-    before_img = np.array(before_img * norm, dtype=np.uint8)
-    after_img = np.array(after_img * norm, dtype=np.uint8)
-
-    vmin, vmax = 48, 304
-    combined = np.clip((subtracted - vmin) / (vmax - vmin), 0, 1)
-    mask = np.logical_or(combined >= 1, combined <= 0)
-    mask = np.stack([mask, mask, mask], axis=-1)
-    combined = (combined * 255.0).astype(np.uint8)
-    combined = apply_colormap(combined)
-    combined[mask] = np.stack([after_img, after_img, after_img], axis=-1)[mask]
-
-    return before_img, after_img, combined, aspects
-
-
-def make_gif(subject_file):
-    subject = subject_file.split('.')[0].split('.')[0]
+def make_gif(subject, ne, e, combined):
     results_dir = os.path.join("results", subject)
-    if not os.path.exists(results_dir):
-        os.makedirs(results_dir)
+    os.makedirs(results_dir, exist_ok=True)
 
-    before_img, after_img, combined, aspects = loader(
-        subject_file
-    )
+    ne = np.transpose(ne, (1, 0, 2))[:, :, ::-1]
 
-    ax_aspect, sag_aspect, cor_aspect = aspects
-    img_shape = before_img.shape
+    e = np.transpose(e, (1, 0, 2))[:, :, ::-1]
+    combined = np.transpose(combined, (1, 0, 2, 3))[:, :, ::-1]
+    img_shape = ne.shape
+    cor_aspect, sag_aspect, ax_aspect = [aspect / img_shape[2] for aspect in img_shape]
     # plot 3 orthogonal slices
-    for name, img in zip(["plain", "with_contrast"], [before_img, after_img]):
+    for name, img in zip(["non-enhance", "enhance"], [ne, e]):
         a1 = plt.subplot(2, 2, 1)
         plt.imshow(img[:, :, img_shape[2] // 2], cmap="gray", vmin=0, vmax=255)
         a1.set_aspect(ax_aspect)
@@ -88,9 +44,7 @@ def make_gif(subject_file):
 
         plt.savefig(os.path.join(results_dir, f"{name}.png"))
 
-    for name, img in zip(
-        ["combined"], [combined]
-    ):
+    for name, img in zip(["combined"], [combined]):
         a1 = plt.subplot(2, 2, 1)
         plt.imshow(img[:, :, img_shape[2] // 2, :])
         a1.set_aspect(ax_aspect)
@@ -127,9 +81,9 @@ def make_gif(subject_file):
     # make short gif video clips
     img_list = []
     for i in range(img_shape[2]):
-        b_img = before_img[:, :, i]
+        b_img = ne[:, :, i]
         b_img = np.stack([b_img, b_img, b_img], axis=-1)
-        a_img = after_img[:, :, i]
+        a_img = e[:, :, i]
         a_img = np.stack([a_img, a_img, a_img], axis=-1)
         img = np.concatenate([b_img, a_img, combined[:, :, i, :]], axis=1)
         img_list.append(Image.fromarray(img, "RGB"))
@@ -145,7 +99,7 @@ def make_gif(subject_file):
     if not os.path.exists(dst_dir):
         os.makedirs(dst_dir)
     for i, img in enumerate(img_list):
-        img.save(os.path.join(dst_dir, str(i)+'.png'), 'PNG')
+        img.save(os.path.join(dst_dir, str(i) + ".png"), "PNG")
 
 
 def show_image_with_control_bar(before_img, after_img, subtracted):
@@ -159,12 +113,8 @@ def show_image_with_control_bar(before_img, after_img, subtracted):
     axmin = plt.axes([0.2, 0.1, 0.65, 0.03], facecolor=axcolor)
     axmax = plt.axes([0.2, 0.15, 0.65, 0.03], facecolor=axcolor)
 
-    smin = plt.Slider(
-        axmin, "Min", np.min(subtracted), np.max(subtracted), valinit=np.min(subtracted)
-    )
-    smax = plt.Slider(
-        axmax, "Max", np.min(subtracted), np.max(subtracted), valinit=np.max(subtracted)
-    )
+    smin = plt.Slider(axmin, "Min", np.min(subtracted), np.max(subtracted), valinit=np.min(subtracted))
+    smax = plt.Slider(axmax, "Max", np.min(subtracted), np.max(subtracted), valinit=np.max(subtracted))
 
     def update(val):
         vmin = smin.val
@@ -188,32 +138,77 @@ def show_image_with_control_bar(before_img, after_img, subtracted):
     plt.show()
 
 
+def dcm2niix(subject):
+    output_dir = os.path.join("data/nifti", subject)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+        for modality in ["dw", "ne", "e"]:
+            input_dir = os.path.join("data/dicom", subject, modality)
+            subprocess.run([f"dcm2niix -o {output_dir} -f {modality} {input_dir}"], shell=True)
+
+
+def BET(subject):
+    os.makedirs(os.path.join("data/dw", subject), exist_ok=True)
+    if not os.path.exists(os.path.join("data/dw", subject, "bet.nii")):
+        bet(os.path.join("data/nifti", subject, "dw.nii"), os.path.join("data/dw", subject, "bet.nii"), mask=True)
+        mask = nib.load(os.path.join("data/dw", subject, "bet_mask.nii")).get_fdata()
+        ne = nib.load(os.path.join("data/nifti", subject, "ne.nii")).get_fdata()
+        mask = zoom(mask, [ne_shape / m_shape for ne_shape, m_shape in zip(ne.shape, mask.shape)])
+        mask = (mask >= 0.5).astype(np.float64)
+        mask = nib.Nifti1Image(mask, affine=np.eye(4))
+        nib.save(mask, f"data/dw/{subject}/bet_mask.nii")
+
+
+def FAST(subject):
+    os.makedirs(os.path.join("data/ne", subject), exist_ok=True)
+    if not os.path.exists(os.path.join("data/ne", subject, "_seg.nii")):
+        fslmaths(os.path.join("data/nifti", subject, "ne.nii")).mas(f"data/dw/{subject}/bet_mask.nii").run(f"data/ne/{subject}/bet.nii")
+        fast(
+            f"data/ne/{subject}/bet.nii",
+            out=f"data/ne/{subject}/",
+            n_classes=3,
+            nopve=True,
+        )
+
+
+def quantify_vol(subject):
+    mask = nib.load(os.path.join("data/ne", subject, "_seg.nii")).get_fdata()
+    ne = nib.load(os.path.join("data/nifti", subject, "ne.nii")).get_fdata()
+    e = nib.load(os.path.join("data/nifti", subject, "e.nii")).get_fdata()
+    ne[mask == 0] = 0
+    e[mask == 0] = 0
+
+    e_mean = e[mask > 0].mean()
+    ne_mean = ne[mask > 0].mean()
+    contrast = (e - e_mean) / e[mask > 0].std() - (ne - ne_mean) / ne[mask > 0].std()
+    contrast_th = 1.96
+    contrast_mask = np.logical_and(contrast >= contrast_th, mask >= 1.5)
+
+    percentage_vol = contrast_mask.sum() / mask.sum()
+
+    max_signal = e.max()
+    e = (e / max_signal * 255).astype(np.uint8)
+    ne = (ne / ne_mean * e_mean / max_signal * 255).astype(np.uint8)
+    contrast = np.clip((contrast - contrast_th) * 128, 0, 255)
+    contrast = apply_colormap(contrast)
+    combined = np.stack([e, e, e], axis=-1)
+    combined[contrast_mask] = contrast[contrast_mask]
+
+    make_gif(subject, ne, e, combined)
+
+    return percentage_vol
+
+
 if __name__ == "__main__":
+    outcome = pd.read_excel("data/outcome.xlsx", header=1, index_col=0, usecols="A,C")
+    for subject in os.listdir("data/dicom"):
+        # Load
+        dcm2niix(subject)
+        BET(subject)
+        FAST(subject)
+        percentage_vol = quantify_vol(subject)
+        print(subject, percentage_vol)
+        outcome.loc[int(subject), "volume(%)"] = percentage_vol * 100
+        print(outcome.loc[int(subject), "volume(%)"])
 
-    # for subject in os.listdir(before_dir):
-    #     before_img, after_img, subtracted_color, diff, combined, subtracted = loader(
-    #         subject
-    #     )
-    #     current_image = 0
-    #     image_len = before_img.shape[2]
-
-    #     not_quit = True
-    #     while True:
-    #         key = keyboard.read_key()
-    #         if key == 'q':
-    #             not_quit = False
-    #         elif key == 'a':
-    #             current_image -= 1
-    #             if current_image < 0:
-    #                 current_image = image_len - 1
-    #         elif key == 'd':
-    #             current_image += 1
-    #             if current_image >= image_len:
-    #                 current_image = 0
-    #         else:
-    #             pass
-
-    #     show_image_with_control_bar(before_img[0], after_img[0], subtracted[0])
-
-    pool = Pool(processes=cpu_count())
-    pool.map(make_gif, os.listdir(before_dir))
+    outcome.to_excel("results.xlsx")

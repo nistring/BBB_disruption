@@ -76,7 +76,7 @@ def apply_colormap(gray3d):
     Returns:
         np.ndarray: A 3D color array
     """
-    gray3d = np.stack([gray3d, gray3d, gray3d], axis=-1)
+    gray3d = np.stack([gray3d, gray3d, gray3d], axis=-1).astype(np.uint8)
     color3d = np.zeros_like(gray3d)
     for i in range(gray3d.shape[2]):
         color3d[:, :, i, :] = cv2.cvtColor(

@@ -27,6 +27,7 @@ def process(func, paras):
     pool.map(func, paras)
     return
 
+
 if __name__ == "__main__":
     data_dir = os.path.join(os.getcwd(), "data")
     data_labels = ["1", "2"]
