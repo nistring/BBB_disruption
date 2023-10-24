@@ -10,22 +10,7 @@ cd Brain_FLAIR
 git clone https://github.com/nistring/Brain_FLAIR.git
 conda create -n FLAIR python==3.10
 conda activate FLAIR
-pip install -r requirements.txt
+pip install fslpy dcm2niix nibabel
+export FSLDIR=path/to/fsl
+source $FSLDIR/etc/fslconf/fsl.sh
 ```
-Place your DICOM files in `BrainPrep/dicom_data`
-
-## Preprocessing
-```
-cd BrainPrep
-python preprocessing.py
-```
-The `preprocessing.py` uses `src` package and is a basic skeleton for making preprocessing pipeline.
-It is designed to strip off skull from MRI and leaves only brain parenchyme for further processing.
-
-## Run
-```
-python main.py
-```
-
-## Results
-Structural similarity between w/ contrast and w/o contrast MRI images. Large discrepencies are highlighted in red.

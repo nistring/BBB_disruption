@@ -10,96 +10,103 @@ import subprocess
 from scipy.ndimage import zoom
 from skimage.filters import threshold_otsu
 import pandas as pd
-
+from scipy.stats import norm, median_abs_deviation
+import copy
+from sklearn.linear_model import RANSACRegressor
+from sklearn.metrics import r2_score
 
 duration = 500
 
-
 def make_gif(subject, ne, e, combined):
     results_dir = os.path.join("results", subject)
-    os.makedirs(results_dir, exist_ok=True)
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir, exist_ok=True)
 
-    ne = np.transpose(ne, (1, 0, 2))[:, :, ::-1]
+        ne = np.transpose(ne, (1, 0, 2))[::-1, :, ::-1]
+        e = np.transpose(e, (1, 0, 2))[::-1, :, ::-1]
+        combined = np.transpose(combined, (1, 0, 2, 3))[::-1, :, ::-1]
+        img_shape = ne.shape
+        # cor_aspect, sag_aspect, ax_aspect = [aspect / img_shape[2] for aspect in img_shape]
+        ax_aspect = 1
+        sag_aspect = 26
+        cor_aspect = 26
+        # plot 3 orthogonal slices
+        for name, img in zip(["non-enhance", "enhance"], [ne, e]):
+            a1 = plt.subplot(2, 2, 1)
+            plt.imshow(img[:, :, img_shape[2] // 2], cmap="gray", vmin=0, vmax=255)
+            a1.set_aspect(ax_aspect)
+            a1.set_title("Axial view")
 
-    e = np.transpose(e, (1, 0, 2))[:, :, ::-1]
-    combined = np.transpose(combined, (1, 0, 2, 3))[:, :, ::-1]
-    img_shape = ne.shape
-    cor_aspect, sag_aspect, ax_aspect = [aspect / img_shape[2] for aspect in img_shape]
-    # plot 3 orthogonal slices
-    for name, img in zip(["non-enhance", "enhance"], [ne, e]):
-        a1 = plt.subplot(2, 2, 1)
-        plt.imshow(img[:, :, img_shape[2] // 2], cmap="gray", vmin=0, vmax=255)
-        a1.set_aspect(ax_aspect)
-        a1.set_title("Axial view")
+            a2 = plt.subplot(2, 2, 2)
+            plt.imshow(img[:, img_shape[1] // 2, :].T, cmap="gray", vmin=0, vmax=255)
+            a2.set_aspect(sag_aspect)
+            a2.set_title("Sagittal view")
 
-        a2 = plt.subplot(2, 2, 2)
-        plt.imshow(img[:, img_shape[1] // 2, :].T, cmap="gray", vmin=0, vmax=255)
-        a2.set_aspect(sag_aspect)
-        a2.set_title("Sagittal view")
+            a3 = plt.subplot(2, 2, 3)
+            plt.imshow(img[img_shape[0] // 2, :, :].T, cmap="gray", vmin=0, vmax=255)
+            a3.set_aspect(cor_aspect)
+            a3.set_title("Coronal view")
 
-        a3 = plt.subplot(2, 2, 3)
-        plt.imshow(img[img_shape[0] // 2, :, :].T, cmap="gray", vmin=0, vmax=255)
-        a3.set_aspect(cor_aspect)
-        a3.set_title("Coronal view")
+            plt.savefig(os.path.join(results_dir, f"{name}.png"))
+            plt.close()
 
-        plt.savefig(os.path.join(results_dir, f"{name}.png"))
+        for name, img in zip(["combined"], [combined]):
+            a1 = plt.subplot(2, 2, 1)
+            plt.imshow(img[:, :, img_shape[2] // 2, :])
+            a1.set_aspect(ax_aspect)
+            a1.set_title("Axial view")
 
-    for name, img in zip(["combined"], [combined]):
-        a1 = plt.subplot(2, 2, 1)
-        plt.imshow(img[:, :, img_shape[2] // 2, :])
-        a1.set_aspect(ax_aspect)
-        a1.set_title("Axial view")
+            a2 = plt.subplot(2, 2, 2)
+            transpose = np.stack(
+                [
+                    img[:, img_shape[1] // 2, :, 0].T,
+                    img[:, img_shape[1] // 2, :, 1].T,
+                    img[:, img_shape[1] // 2, :, 2].T,
+                ],
+                axis=-1,
+            )
+            plt.imshow(transpose)
+            a2.set_aspect(sag_aspect)
+            a2.set_title("Sagittal view")
 
-        a2 = plt.subplot(2, 2, 2)
-        transpose = np.stack(
-            [
-                img[:, img_shape[1] // 2, :, 0].T,
-                img[:, img_shape[1] // 2, :, 1].T,
-                img[:, img_shape[1] // 2, :, 2].T,
-            ],
-            axis=-1,
+            a3 = plt.subplot(2, 2, 3)
+            transpose = np.stack(
+                [
+                    img[img_shape[0] // 2, :, :, 0].T,
+                    img[img_shape[0] // 2, :, :, 1].T,
+                    img[img_shape[0] // 2, :, :, 2].T,
+                ],
+                axis=-1,
+            )
+            plt.imshow(transpose)
+            a3.set_aspect(cor_aspect)
+            a3.set_title("Coronal view")
+
+            plt.savefig(os.path.join(results_dir, f"{name}.png"))
+            plt.close()
+
+        # make short gif video clips
+        img_list = []
+        for i in reversed(range(img_shape[2])):
+            b_img = ne[:, :, i]
+            b_img = np.stack([b_img, b_img, b_img], axis=-1)
+            a_img = e[:, :, i]
+            a_img = np.stack([a_img, a_img, a_img], axis=-1)
+            img = np.concatenate([b_img, a_img, combined[:, :, i, :]], axis=1)
+            img_list.append(Image.fromarray(img, "RGB"))
+
+        img_list[0].save(
+            os.path.join(results_dir, "plain-contrast-subtracted.gif"),
+            save_all=True,
+            append_images=img_list[1:],
+            duration=duration,
         )
-        plt.imshow(transpose)
-        a2.set_aspect(sag_aspect)
-        a2.set_title("Sagittal view")
 
-        a3 = plt.subplot(2, 2, 3)
-        transpose = np.stack(
-            [
-                img[img_shape[0] // 2, :, :, 0].T,
-                img[img_shape[0] // 2, :, :, 1].T,
-                img[img_shape[0] // 2, :, :, 2].T,
-            ],
-            axis=-1,
-        )
-        plt.imshow(transpose)
-        a3.set_aspect(cor_aspect)
-        a3.set_title("Coronal view")
-
-        plt.savefig(os.path.join(results_dir, f"{name}.png"))
-
-    # make short gif video clips
-    img_list = []
-    for i in range(img_shape[2]):
-        b_img = ne[:, :, i]
-        b_img = np.stack([b_img, b_img, b_img], axis=-1)
-        a_img = e[:, :, i]
-        a_img = np.stack([a_img, a_img, a_img], axis=-1)
-        img = np.concatenate([b_img, a_img, combined[:, :, i, :]], axis=1)
-        img_list.append(Image.fromarray(img, "RGB"))
-
-    img_list[0].save(
-        os.path.join(results_dir, "plain-contrast-subtracted.gif"),
-        save_all=True,
-        append_images=img_list[1:],
-        duration=duration,
-    )
-
-    dst_dir = os.path.join("results", subject, name)
-    if not os.path.exists(dst_dir):
-        os.makedirs(dst_dir)
-    for i, img in enumerate(img_list):
-        img.save(os.path.join(dst_dir, str(i) + ".png"), "PNG")
+        dst_dir = os.path.join("results", subject, name)
+        if not os.path.exists(dst_dir):
+            os.makedirs(dst_dir)
+        for i, img in enumerate(img_list):
+            img.save(os.path.join(dst_dir, str(i) + ".png"), "PNG")
 
 
 def show_image_with_control_bar(before_img, after_img, subtracted):
@@ -172,43 +179,85 @@ def FAST(subject):
 
 
 def quantify_vol(subject):
-    mask = nib.load(os.path.join("data/ne", subject, "_seg.nii")).get_fdata()
-    ne = nib.load(os.path.join("data/nifti", subject, "ne.nii")).get_fdata()
-    e = nib.load(os.path.join("data/nifti", subject, "e.nii")).get_fdata()
+    mask = nib.load(os.path.join("data/ne", subject, "_seg.nii")).get_fdata()[:,:,2:-1]
+    ne = nib.load(os.path.join("data/nifti", subject, "ne.nii")).get_fdata()[:,:,2:-1]
+    e = nib.load(os.path.join("data/nifti", subject, "e.nii")).get_fdata()[:,:,2:-1]
+
     ne[mask == 0] = 0
     e[mask == 0] = 0
 
-    e_mean = e[mask > 0].mean()
-    ne_mean = ne[mask > 0].mean()
-    contrast = (e - e_mean) / e[mask > 0].std() - (ne - ne_mean) / ne[mask > 0].std()
-    contrast_th = 1.96
-    contrast_mask = np.logical_and(contrast >= contrast_th, mask >= 1.5)
+    parenchyme = mask > 1.5
+    gm = mask > 2.5
 
-    percentage_vol = contrast_mask.sum() / mask.sum()
+    x, y = ne[gm][:, np.newaxis], e[gm]
+    threshold = median_abs_deviation(y) * 1
+    ransac = RANSACRegressor(residual_threshold=threshold, random_state=0).fit(x, y)
+    inlier_mask = ransac.inlier_mask_
+    outlier_mask = np.logical_not(inlier_mask)
+    line_X = np.arange(x.min(), x.max())[:, np.newaxis]
+    line_y = ransac.predict(line_X)
+
+    lw=2
+    plt.scatter(
+        x[inlier_mask], y[inlier_mask], color="yellowgreen", marker=".", label="Inliers", s=0.1
+    )
+    plt.scatter(
+        x[outlier_mask], y[outlier_mask], color="gold", marker=".", label="Outliers", s=0.1
+    )
+    plt.plot(
+        line_X,
+        line_y,
+        color="cornflowerblue",
+        linewidth=lw,
+        label="RANSAC regressor",
+    )
+    plt.legend(loc="lower right")
+    plt.xlabel("Input")
+    plt.ylabel("Response")
+    plt.savefig(f"{subject}.png")
+    plt.close()
+
+    predict = ransac.predict(x)
+    predict_mean = predict.mean()
+    contrast = (y - predict) / predict_mean
+    contrast_mask = np.logical_and(contrast > 0, outlier_mask)
+    contrast = contrast[contrast_mask]
+
+    mean_pv = contrast.sum() / gm.sum()
+    # mean_pv = contrast.mean()
 
     max_signal = e.max()
+    ne = (ne / x.mean() * predict_mean / max_signal * 255).astype(np.uint8)
     e = (e / max_signal * 255).astype(np.uint8)
-    ne = (ne / ne_mean * e_mean / max_signal * 255).astype(np.uint8)
-    contrast = np.clip((contrast - contrast_th) * 128, 0, 255)
-    contrast = apply_colormap(contrast)
+    contrast = apply_colormap(np.clip((contrast - contrast.mean()) * 255, 0, 255)[:, np.newaxis, np.newaxis])
     combined = np.stack([e, e, e], axis=-1)
-    combined[contrast_mask] = contrast[contrast_mask]
+    gm[gm==True] = contrast_mask
+    combined[gm] = contrast[:, 0, 0]
 
     make_gif(subject, ne, e, combined)
 
-    return percentage_vol
+    return mean_pv
 
 
 if __name__ == "__main__":
     outcome = pd.read_excel("data/outcome.xlsx", header=1, index_col=0, usecols="A,C")
+    good, poor = [], []
     for subject in os.listdir("data/dicom"):
         # Load
         dcm2niix(subject)
         BET(subject)
         FAST(subject)
         percentage_vol = quantify_vol(subject)
-        print(subject, percentage_vol)
+        print(subject, outcome.loc[int(subject), "1, good 2, poor"], percentage_vol)
+        # if(percentage_vol.shape[0] == 24):
+        #     if outcome.loc[int(subject), "1, good 2, poor"] == 1:
+        #         good.append(percentage_vol)
+        #     else:
+        #         poor.append(percentage_vol)
         outcome.loc[int(subject), "volume(%)"] = percentage_vol * 100
-        print(outcome.loc[int(subject), "volume(%)"])
 
     outcome.to_excel("results.xlsx")
+    # histogram = pd.DataFrame(np.concatenate((good + poor)))
+    # histogram["layer"] = np.tile(np.arange(24), len(good + poor))
+    # histogram["prognosis"] = ["good"] * (len(good) * 24) + ["poor"] * (len(poor) * 24)
+    # histogram.to_excel("histogram.xlsx")

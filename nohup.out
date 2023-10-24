@@ -1,0 +1,1272 @@
+/usr/local/lib/python3.8/dist-packages/pandas/core/computation/expressions.py:20: UserWarning: Pandas requires version '2.7.3' or newer of 'numexpr' (version '2.7.0' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+1060927 0.0005222464813812584
+0.05222464813812584
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1099922 0.004383587826514443
+0.43835878265144435
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0165564 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1134752/dw (256x256x40x1)
+Conversion required 0.147562 seconds (0.048498 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.03809:0:0.0216269 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1134752/ne (512x512x24x1)
+Conversion required 0.114937 seconds (0.053000 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.26667:0:0.0202703 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1134752/e (512x512x24x1)
+Conversion required 0.096216 seconds (0.044066 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1134752 0.0009787147152221824
+0.09787147152221824
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.016992 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1184601/dw (256x256x40x1)
+Conversion required 0.090786 seconds (0.045748 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.23785:0:0.0292312 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1184601/ne (512x512x24x1)
+Conversion required 0.075490 seconds (0.041088 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.32234:0:0.0221775 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1184601/e (512x512x24x1)
+Conversion required 0.109715 seconds (0.061638 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1184601 0.0004314245482647117
+0.04314245482647117
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0209436 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1305554/dw (256x256x40x1)
+Conversion required 0.092110 seconds (0.031839 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.11087:0:0.0346361 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1305554/ne (512x512x24x1)
+Conversion required 0.083507 seconds (0.038645 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.60488:0:0.043897 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1305554/e (512x512x24x1)
+Conversion required 0.123529 seconds (0.046539 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1305554 0.0013801044777709515
+0.13801044777709515
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0255331 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1332981/dw (256x256x40x1)
+Conversion required 0.140829 seconds (0.061113 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.15189:0:0.0259751 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1332981/ne (512x512x24x1)
+Conversion required 0.100341 seconds (0.052217 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.98608:0:0.0234271 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1332981/e (512x512x24x1)
+Conversion required 0.108286 seconds (0.054936 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1332981 0.0068158222653379895
+0.681582226533799
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0168174 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1334470/dw (256x256x40x1)
+Conversion required 0.095271 seconds (0.035568 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.23736:0:0.041554 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1334470/ne (512x512x24x1)
+Conversion required 0.099261 seconds (0.052788 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.89426:0:0.0441513 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1334470/e (512x512x24x1)
+Conversion required 0.114162 seconds (0.057777 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1334470 0.0018963026350416318
+0.18963026350416318
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0205537 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1347605/dw (256x256x40x1)
+Conversion required 0.110936 seconds (0.050908 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.12943:0:0.023485 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1347605/ne (512x512x24x1)
+Conversion required 0.119130 seconds (0.053864 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.73333:0:0.0219414 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1347605/e (512x512x24x1)
+Conversion required 0.105586 seconds (0.045309 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1347605 0.00044302854146710194
+0.044302854146710195
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0181103 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1408351/dw (256x256x40x1)
+Conversion required 0.112040 seconds (0.052544 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.51966:0:0.0238947 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1408351/ne (512x512x24x1)
+Conversion required 0.110256 seconds (0.054916 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.69939:0:0.0218115 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1408351/e (512x512x24x1)
+Conversion required 0.119335 seconds (0.054926 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1408351 0.00035287457698692496
+0.035287457698692494
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0216431 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1433992/dw (256x256x40x1)
+Conversion required 0.214091 seconds (0.070201 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.44835:0:0.0243663 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1433992/ne (512x512x24x1)
+Conversion required 0.113470 seconds (0.057016 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.27937:0:0.022179 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1433992/e (512x512x24x1)
+Conversion required 0.109229 seconds (0.059000 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1433992 0.00013868902611750041
+0.013868902611750042
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0194933 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1491007/dw (256x256x40x1)
+Conversion required 0.081591 seconds (0.029873 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.6989:0:0.025726 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1491007/ne (512x512x24x1)
+Conversion required 0.094331 seconds (0.037462 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.2967:0:0.0244504 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1491007/e (512x512x24x1)
+Conversion required 0.119893 seconds (0.036134 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1491007 0.0008680503254005211
+0.0868050325400521
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0122178 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1511922/dw (256x256x40x1)
+Conversion required 0.093116 seconds (0.044644 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 25 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.44713:0:0.0339842 (see PMC3998685)
+Convert 25 DICOM as data/nifti/1511922/ne (560x560x25x1)
+Conversion required 0.113138 seconds (0.058487 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 25 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.47961:0:0.030198 (see PMC3998685)
+Convert 25 DICOM as data/nifti/1511922/e (560x560x25x1)
+Conversion required 0.115278 seconds (0.060381 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1511922 0.003820693632753308
+0.3820693632753308
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0246471 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1542575/dw (256x256x40x1)
+Conversion required 0.114753 seconds (0.031857 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 5.49475:0:0.0256264 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1542575/ne (512x512x24x1)
+Conversion required 0.092368 seconds (0.037426 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.22173:0:0.0247976 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1542575/e (512x512x24x1)
+Conversion required 0.112455 seconds (0.040553 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1542575 0.0005094437579359949
+0.05094437579359949
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0232587 (see PMC3998685)
+Convert 40 DICOM as data/nifti/155955/dw (256x256x40x1)
+Conversion required 0.104275 seconds (0.055538 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.41245:0:0.0245998 (see PMC3998685)
+Convert 24 DICOM as data/nifti/155955/ne (512x512x24x1)
+Conversion required 0.105025 seconds (0.057572 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.10354:0:0.0230687 (see PMC3998685)
+Convert 24 DICOM as data/nifti/155955/e (512x512x24x1)
+Conversion required 0.100840 seconds (0.052521 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+155955 0.000790056133406152
+0.0790056133406152
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0244429 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1620130/dw (256x256x40x1)
+Conversion required 0.110133 seconds (0.045774 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.19902:0:0.0241849 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1620130/ne (512x512x24x1)
+Conversion required 0.096328 seconds (0.045274 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.01392:0:0.0223549 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1620130/e (512x512x24x1)
+Conversion required 0.119246 seconds (0.053225 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1620130 0.00012023057639791543
+0.012023057639791543
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0204706 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1658026/dw (256x256x40x1)
+Conversion required 0.095521 seconds (0.033560 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.54286:0:0.0415482 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1658026/ne (512x512x24x1)
+Conversion required 0.100433 seconds (0.051469 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.76337:0:0.0343898 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1658026/e (512x512x24x1)
+Conversion required 0.112754 seconds (0.059671 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1658026 0.0013374300662868997
+0.13374300662868996
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0310905 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1667711/dw (256x256x40x1)
+Conversion required 0.214814 seconds (0.065066 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.60366:0:0.0212503 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1667711/ne (512x512x24x1)
+Conversion required 0.200566 seconds (0.072747 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.52137:0:0.0210358 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1667711/e (512x512x24x1)
+Conversion required 0.192951 seconds (0.072313 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1667711 0.0001726710166480476
+0.01726710166480476
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0278757 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1693300/dw (256x256x40x1)
+Conversion required 0.119532 seconds (0.055854 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.34554:0:0.0230899 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1693300/ne (512x512x24x1)
+Conversion required 0.121153 seconds (0.065514 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.24444:0:0.0215003 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1693300/e (512x512x24x1)
+Conversion required 0.095831 seconds (0.049599 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1693300 0.0005054510833024711
+0.05054510833024711
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0225815 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1708547/dw (256x256x40x1)
+Conversion required 0.114357 seconds (0.052753 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.28791:0:0.0237085 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1708547/ne (512x512x24x1)
+Conversion required 0.110853 seconds (0.053694 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.05397:0:0.0216992 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1708547/e (512x512x24x1)
+Conversion required 0.166021 seconds (0.066910 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1708547 0.0005331136515149167
+0.053311365151491666
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0238339 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1733033/dw (256x256x40x1)
+Conversion required 0.292362 seconds (0.073898 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.75067:0:0.019967 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1733033/ne (512x512x24x1)
+Conversion required 0.237862 seconds (0.077965 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.84957:0:0.0189434 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1733033/e (512x512x24x1)
+Conversion required 0.271500 seconds (0.072623 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1733033 0.004096097061769543
+0.40960970617695436
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0222982 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1736991/dw (256x256x40x1)
+Conversion required 0.108156 seconds (0.050851 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.53138:0:0.0221315 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1736991/ne (512x512x24x1)
+Conversion required 0.095046 seconds (0.047067 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.19512:0:0.0206871 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1736991/e (512x512x24x1)
+Conversion required 0.095714 seconds (0.050834 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1736991 0.00529160413398556
+0.529160413398556
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0338326 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1740148/dw (256x256x40x1)
+Conversion required 0.088938 seconds (0.030753 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.30891:0:0.0340026 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1740148/ne (512x512x24x1)
+Conversion required 0.095990 seconds (0.051529 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.06325:0:0.0520078 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1740148/e (512x512x24x1)
+Conversion required 0.109196 seconds (0.053811 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1740148 0.0015598081762667945
+0.15598081762667945
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.016597 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1744043/dw (256x256x40x1)
+Conversion required 0.104999 seconds (0.031603 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.94847:0:0.0417579 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1744043/ne (512x512x24x1)
+Conversion required 0.105155 seconds (0.035833 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.5265:0:0.045102 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1744043/e (512x512x24x1)
+Conversion required 0.119095 seconds (0.038641 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1744043 0.0021214405740496846
+0.21214405740496844
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0366294 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1747988/dw (256x256x40x1)
+Conversion required 0.147853 seconds (0.058999 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 5.14798:0:0.0268009 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1747988/ne (512x512x24x1)
+Conversion required 0.110815 seconds (0.051564 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.19243:0:0.0241834 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1747988/e (512x512x24x1)
+Conversion required 0.190281 seconds (0.073266 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1747988 0.0017645715176505866
+0.17645715176505866
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.027372 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1751281/dw (256x256x40x1)
+Conversion required 0.153258 seconds (0.063418 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.56044:0:0.0245297 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1751281/ne (512x512x24x1)
+Conversion required 0.119931 seconds (0.055039 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.35433:0:0.0226291 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1751281/e (512x512x24x1)
+Conversion required 0.134107 seconds (0.053392 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1751281 0.0002548319733743345
+0.02548319733743345
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0255204 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1752605/dw (256x256x40x1)
+Conversion required 0.114881 seconds (0.057726 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.96825:0:0.0311786 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1752605/ne (512x512x24x1)
+Conversion required 0.113064 seconds (0.047094 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.80977:0:0.0246271 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1752605/e (512x512x24x1)
+Conversion required 0.108417 seconds (0.035653 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1752605 0.002285562921632288
+0.22855629216322879
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0229324 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1756829/dw (256x256x40x1)
+Conversion required 0.124606 seconds (0.056778 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.59194:0:0.0264792 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1756829/ne (512x512x24x1)
+Conversion required 0.110247 seconds (0.052687 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.99902:0:0.0211016 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1756829/e (512x512x24x1)
+Conversion required 0.102227 seconds (0.050670 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1756829 0.0017645093439330724
+0.17645093439330725
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0313118 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1758077/dw (256x256x40x1)
+Conversion required 0.098130 seconds (0.047707 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.63492:0:0.0336796 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1758077/ne (512x512x24x1)
+Conversion required 0.098132 seconds (0.050334 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.48059:0:0.0227194 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1758077/e (512x512x24x1)
+Conversion required 0.114711 seconds (0.055571 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1758077 0.0009256156756416725
+0.09256156756416725
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0126685 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1761035/dw (256x256x40x1)
+Conversion required 0.146674 seconds (0.034382 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.22662:0:0.0136482 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1761035/ne (512x512x24x1)
+Conversion required 0.104557 seconds (0.035983 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.94725:0:0.0214985 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1761035/e (512x512x24x1)
+Conversion required 0.088860 seconds (0.037852 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1761035 0.0057564057049673545
+0.5756405704967354
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.00903155 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1761106/dw (256x256x40x1)
+Conversion required 0.132275 seconds (0.058312 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.78657:0:0.0173117 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1761106/ne (512x512x24x1)
+Conversion required 0.106866 seconds (0.051892 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.96777:0:0.022424 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1761106/e (512x512x24x1)
+Conversion required 0.107881 seconds (0.035301 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1761106 0.0011410596869578615
+0.11410596869578615
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0245355 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1764565/dw (256x256x40x1)
+Conversion required 0.100238 seconds (0.045251 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.25421:0:0.0239833 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1764565/ne (512x512x24x1)
+Conversion required 0.097396 seconds (0.053304 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.063:0:0.0214847 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1764565/e (512x512x24x1)
+Conversion required 0.106468 seconds (0.052737 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1764565 0.0012540108343420532
+0.1254010834342053
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0192405 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1766771/dw (256x256x40x1)
+Conversion required 0.099928 seconds (0.046787 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.2884:0:0.0161765 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1766771/ne (512x512x24x1)
+Conversion required 0.101630 seconds (0.035834 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.38828:0:0.0269503 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1766771/e (512x512x24x1)
+Conversion required 0.113369 seconds (0.036672 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1766771 0.007032754373873295
+0.7032754373873294
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.020958 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1786910/dw (256x256x40x1)
+Conversion required 0.117015 seconds (0.058379 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.66447:0:0.0224909 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1786910/ne (512x512x24x1)
+Conversion required 0.139407 seconds (0.060676 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.20928:0:0.0219625 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1786910/e (512x512x24x1)
+Conversion required 0.087158 seconds (0.046379 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1786910 0.0012873437339223687
+0.12873437339223687
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0164714 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1793826/dw (256x256x40x1)
+Conversion required 0.090727 seconds (0.030952 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.20806:0:0.0390126 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1793826/ne (512x512x24x1)
+Conversion required 0.105923 seconds (0.037180 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.4359:0:0.0586657 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1793826/e (512x512x24x1)
+Conversion required 0.106465 seconds (0.039449 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1793826 0.0017319591710065793
+0.17319591710065793
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0203687 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1810126/dw (256x256x40x1)
+Conversion required 0.118725 seconds (0.059774 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.28107:0:0.0383314 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1810126/ne (512x512x24x1)
+Conversion required 0.126249 seconds (0.055108 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.92063:0:0.0382653 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1810126/e (512x512x24x1)
+Conversion required 0.130523 seconds (0.059806 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1810126 0.0010582273109905076
+0.10582273109905076
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0208701 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1898509/dw (256x256x40x1)
+Conversion required 0.201581 seconds (0.031355 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.45372:0:0.0235217 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1898509/ne (512x512x24x1)
+Conversion required 0.132409 seconds (0.036805 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.27546:0:0.0217623 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1898509/e (512x512x24x1)
+Conversion required 0.825195 seconds (0.049972 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1898509 0.00317572652547038
+0.31757265254703804
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.01433 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1900691/dw (256x256x40x1)
+Conversion required 0.105708 seconds (0.050571 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.65739:0:0.038739 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1900691/ne (512x512x24x1)
+Conversion required 0.122705 seconds (0.057839 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.75849:0:0.0532023 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1900691/e (512x512x24x1)
+Conversion required 0.126745 seconds (0.061537 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1900691 0.0011246499177693828
+0.11246499177693828
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0245132 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1900818/dw (256x256x40x1)
+Conversion required 0.124834 seconds (0.055560 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.38608:0:0.0378145 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1900818/ne (512x512x24x1)
+Conversion required 0.114198 seconds (0.054166 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.60098:0:0.052503 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1900818/e (512x512x24x1)
+Conversion required 0.100652 seconds (0.052274 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1900818 0.001093867267888528
+0.1093867267888528
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0290235 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1902643/dw (256x256x40x1)
+Conversion required 0.206495 seconds (0.064694 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.0464:0:0.0284588 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1902643/ne (512x512x24x1)
+Conversion required 0.161613 seconds (0.067522 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.34945:0:0.0223563 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1902643/e (512x512x24x1)
+Conversion required 0.118053 seconds (0.050731 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1902643 0.00033571250091364796
+0.033571250091364795
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0300587 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1904922/dw (256x256x40x1)
+Conversion required 0.519799 seconds (0.082134 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.34676:0:0.027539 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1904922/ne (512x512x24x1)
+Conversion required 0.106129 seconds (0.044865 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.57265:0:0.0229892 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1904922/e (512x512x24x1)
+Conversion required 0.090318 seconds (0.044343 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1904922 0.0009409985694883078
+0.09409985694883079
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0279587 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1909413/dw (256x256x40x1)
+Conversion required 0.120317 seconds (0.032001 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 5.01416:0:0.0243097 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1909413/ne (512x512x24x1)
+Conversion required 0.123287 seconds (0.040202 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.29182:0:0.0226193 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1909413/e (512x512x24x1)
+Conversion required 0.112535 seconds (0.040658 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1909413 0.0008533614027832927
+0.08533614027832927
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0267077 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1957969/dw (256x256x40x1)
+Conversion required 0.102751 seconds (0.049421 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.57436:0:0.0259336 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1957969/ne (512x512x24x1)
+Conversion required 0.115213 seconds (0.054644 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.4757:0:0.020571 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1957969/e (512x512x24x1)
+Conversion required 0.113722 seconds (0.051349 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1957969 0.004953507844918107
+0.4953507844918107
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0394338 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1988777/dw (256x256x40x1)
+Conversion required 0.088739 seconds (0.031990 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.6569:0:0.0340617 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1988777/ne (512x512x24x1)
+Conversion required 0.109440 seconds (0.048082 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.65128:0:0.023284 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1988777/e (512x512x24x1)
+Conversion required 0.143521 seconds (0.058438 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1988777 0.004641692983288381
+0.4641692983288381
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0294793 (see PMC3998685)
+Convert 40 DICOM as data/nifti/1998466/dw (256x256x40x1)
+Conversion required 0.121188 seconds (0.058750 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.3514:0:0.0332144 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1998466/ne (512x512x24x1)
+Conversion required 0.130243 seconds (0.061967 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 1.56679:0:0.0459705 (see PMC3998685)
+Convert 24 DICOM as data/nifti/1998466/e (512x512x24x1)
+Conversion required 0.098142 seconds (0.048211 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+1998466 0.0009995184453630535
+0.09995184453630536
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0156369 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2002370/dw (256x256x40x1)
+Conversion required 0.241122 seconds (0.061073 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.33773:0:0.0253863 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2002370/ne (512x512x24x1)
+Conversion required 0.181978 seconds (0.057561 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.03785:0:0.0228847 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2002370/e (512x512x24x1)
+Conversion required 0.093227 seconds (0.038271 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2002370 0.000767138816797079
+0.0767138816797079
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0155644 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2002458/dw (256x256x40x1)
+Conversion required 0.082717 seconds (0.037938 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.68352:0:0.033131 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2002458/ne (512x512x24x1)
+Conversion required 0.090934 seconds (0.036831 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 2.20513:0:0.0358911 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2002458/e (512x512x24x1)
+Conversion required 0.098052 seconds (0.042849 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2002458 0.0007888492102207221
+0.07888492102207222
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0220306 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2009384/dw (256x256x40x1)
+Conversion required 0.119078 seconds (0.054852 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.92088:0:0.0229904 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2009384/ne (512x512x24x1)
+Conversion required 0.112065 seconds (0.037196 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.54237:0:0.0214908 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2009384/e (512x512x24x1)
+Conversion required 0.155859 seconds (0.041069 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2009384 0.001031848234084395
+0.1031848234084395
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0313069 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2011880/dw (256x256x40x1)
+Conversion required 0.114427 seconds (0.030397 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.82125:0:0.0232671 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2011880/ne (512x512x24x1)
+Conversion required 0.141995 seconds (0.049324 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.50061:0:0.0216535 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2011880/e (512x512x24x1)
+Conversion required 0.175286 seconds (0.067654 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2011880 0.0007255617340197455
+0.07255617340197455
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0331199 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2015514/dw (256x256x40x1)
+Conversion required 0.118491 seconds (0.058451 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.65885:0:0.0221277 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2015514/ne (512x512x24x1)
+Conversion required 0.110908 seconds (0.055374 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.35336:0:0.0210513 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2015514/e (512x512x24x1)
+Conversion required 0.116837 seconds (0.060297 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2015514 0.001659670466351347
+0.1659670466351347
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0346716 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2023814/dw (256x256x40x1)
+Conversion required 0.126983 seconds (0.055667 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 5.40977:0:0.024657 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2023814/ne (512x512x24x1)
+Conversion required 0.085004 seconds (0.037047 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.54994:0:0.0233318 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2023814/e (512x512x24x1)
+Conversion required 0.085915 seconds (0.036651 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2023814 0.005156925850041009
+0.5156925850041009
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0278511 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2025543/dw (256x256x40x1)
+Conversion required 0.110003 seconds (0.049354 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.91722:0:0.0246387 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2025543/ne (512x512x24x1)
+Conversion required 0.108868 seconds (0.055850 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.19634:0:0.023996 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2025543/e (512x512x24x1)
+Conversion required 0.106225 seconds (0.056191 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2025543 0.004609153444407296
+0.4609153444407296
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0216925 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2038682/dw (256x256x40x1)
+Conversion required 0.134109 seconds (0.058653 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.67619:0:0.0265341 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2038682/ne (512x512x24x1)
+Conversion required 0.110979 seconds (0.050044 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.10452:0:0.0209975 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2038682/e (512x512x24x1)
+Conversion required 0.116386 seconds (0.060369 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2038682 0.0007846416124440679
+0.07846416124440679
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 40 DICOM file(s)
+Warning: This diffusion series does not have a B0 (reference) volume
+Note: this appears to be a b=0+trace DWI; ADC/trace removal has been disabled.
+Warning: Volume 0 appears to be derived image ADC/Isotropic (non-zero b-value with zero vector length)
+Philips Scaling Values RS:RI:SS = 1:0:0.0316413 (see PMC3998685)
+Convert 40 DICOM as data/nifti/2058793/dw (256x256x40x1)
+Conversion required 0.135189 seconds (0.058683 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 4.26423:0:0.0283119 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2058793/ne (512x512x24x1)
+Conversion required 0.128606 seconds (0.060887 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.59683:0:0.0273429 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2058793/e (512x512x24x1)
+Conversion required 0.114084 seconds (0.049265 for core code).
+
+WARNING:: Inconsistent orientations for individual images in pipeline!
+          Will use voxel-based orientation which is probably incorrect - *PLEASE CHECK*!
+
+2058793 0.0005533935208843814
+0.05533935208843814
+Error: Input folder invalid: data/dicom/2080494/dw
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.61465:0:0.0338353 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2080494/ne (560x560x24x1)
+Conversion required 0.452896 seconds (0.094864 for core code).
+Chris Rorden's dcm2niiX version v1.0.20220505  GCC9.4.0 x86-64 (64-bit Linux)
+Found 24 DICOM file(s)
+Philips Scaling Values RS:RI:SS = 3.57582:0:0.0289368 (see PMC3998685)
+Convert 24 DICOM as data/nifti/2080494/e (560x560x24x1)
+Conversion required 0.103829 seconds (0.054760 for core code).
+Traceback (most recent call last):
+  File "main.py", line 207, in <module>
+    BET(subject)
+  File "main.py", line 153, in BET
+    bet(os.path.join("data/nifti", subject, "dw.nii"), os.path.join("data/dw", subject, "bet.nii"), mask=True)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/wrappers/wrapperutils.py", line 1282, in wrapper
+    result = fot(*args, **kwargs)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/wrappers/wrapperutils.py", line 921, in __call__
+    result = func(*args, **kwargs)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/wrappers/wrapperutils.py", line 212, in wrapper
+    cmd = func(*args, **kwargs)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/wrappers/bet.py", line 32, in bet
+    asrt.assertIsNifti(input)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/utils/assertions.py", line 70, in wrapper
+    return func(*args, **kwargs)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/utils/assertions.py", line 105, in assertIsNifti
+    f = ensure.ensureIsImage(f)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/utils/ensure.py", line 27, in ensureIsImage
+    img = fslimage.addExt(img)
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/data/image.py", line 1955, in addExt
+    raise e
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/data/image.py", line 1942, in addExt
+    return fslpath.addExt(prefix,
+  File "/home/work/.local/lib/python3.8/site-packages/fsl/utils/path.py", line 196, in addExt
+    raise PathError('Could not find a supported file '
+fsl.utils.path.PathError: Could not find a supported file with prefix "data/nifti/2080494/dw.nii"
