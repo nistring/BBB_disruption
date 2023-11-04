@@ -167,7 +167,7 @@ cython_debug/
 .vscode/
 results
 data
-ANTs
 fsl
 install
 *.png
+*.xlsx

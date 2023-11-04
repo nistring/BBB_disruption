@@ -1,7 +1,10 @@
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 import numpy as np
+from statannotations.Annotator import Annotator
 sns.set_theme(style="ticks", palette="pastel")
 
 # df = pd.read_excel("histogram.xlsx", index_col=0)
@@ -15,8 +18,14 @@ sns.set_theme(style="ticks", palette="pastel")
 # g.legend.set_title("")
 # plt.savefig("histogram.png")
 
-
+x = "1, good 2, poor"
+y = "volume(%)"
 df = pd.read_excel("results.xlsx", index_col=0)
-sns.boxplot(x= "1, good 2, poor", y="volume(%)", data=df)
+df[y] = df[y] * 100
+ax = sns.boxplot(x="1, good 2, poor", y="volume(%)", data=df)
+annot = Annotator(ax, [(1, 2)], data=df, x=x, y=y)
+annot.configure(test='Mann-Whitney', text_format='star', loc='outside', verbose=2)
+annot.apply_test()
+ax, test_results = annot.annotate()
 plt.ylabel("mean enhancement (%)")
 plt.savefig("results.png")
