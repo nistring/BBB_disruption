@@ -168,6 +168,7 @@ cython_debug/
 results
 data
 fsl
+fslinstaller.py
 install
 *.png
 *.xlsx
