@@ -19,13 +19,14 @@ sns.set_theme(style="ticks", palette="pastel")
 # plt.savefig("histogram.png")
 
 x = "1, good 2, poor"
-y = "volume(%)"
-df = pd.read_excel("results.xlsx", index_col=0)
-df[y] = df[y] * 100
-ax = sns.boxplot(x="1, good 2, poor", y="volume(%)", data=df)
-annot = Annotator(ax, [(1, 2)], data=df, x=x, y=y)
-annot.configure(test='Mann-Whitney', text_format='star', loc='outside', verbose=2)
-annot.apply_test()
-ax, test_results = annot.annotate()
-plt.ylabel("mean enhancement (%)")
-plt.savefig("results.png")
+for y in ["volume(%)", "z score"]:
+    df = pd.read_excel("results/results.xlsx", index_col=0)
+    print(df)
+    ax = sns.boxplot(x=x, y=y, data=df)
+    annot = Annotator(ax, [(1, 2)], data=df, x=x, y=y)
+    annot.configure(test='Mann-Whitney', text_format='star', loc='outside', verbose=2)
+    annot.apply_test()
+    ax, test_results = annot.annotate()
+    plt.ylabel(y)
+    plt.savefig(f"results/figure({y}).png")
+    plt.clf()
