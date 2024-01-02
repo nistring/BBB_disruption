@@ -20,7 +20,7 @@ sns.set_theme(style="ticks", palette="pastel")
 
 x = "1, good 2, poor"
 for y in ["volume(%)", "z score"]:
-    df = pd.read_excel("results/results.xlsx", index_col=0)
+    df = pd.read_excel("results/table.xlsx", index_col=0)
     print(df)
     ax = sns.boxplot(x=x, y=y, data=df)
     annot = Annotator(ax, [(1, 2)], data=df, x=x, y=y)
