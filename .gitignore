@@ -171,3 +171,5 @@ fsl
 install
 *.png
 *.xlsx
+nohup.out
+fslinstaller.py
