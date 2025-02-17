@@ -167,9 +167,9 @@ cython_debug/
 .vscode/
 results
 data
-fsl
-install
 *.png
 *.xlsx
+*.csv
 nohup.out
-fslinstaller.py
+bids-out
+*.ini
