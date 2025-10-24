@@ -39,7 +39,7 @@ def analyze_data(results_path, qa_type):
     # Calculate the ROC curves
     fig, ax = plt.subplots()
     
-    RocCurveDisplay.from_predictions(y, data[[qa_type]].values / data[[flair]].values, ax=ax, name=f"{qa_type}/{flair}")
+    RocCurveDisplay.from_predictions(y, data[[qa_type]].values * data[[flair]].values, ax=ax, name=f"{qa_type} x {flair}")
     RocCurveDisplay.from_predictions(y, data[[qa_type]], ax=ax, name=f"{qa_type}")
     RocCurveDisplay.from_predictions(y, data[[flair]], ax=ax, name=f"{flair}")
     
@@ -175,7 +175,7 @@ if __name__ == "__main__":
             else:
                 subjects2.append(subject)
 
-    df = pd.read_excel("data/raw.xlsx", header=0, usecols="A,C,H,I").iloc[:75]
+    df = pd.read_excel("data/outcome.xlsx", header=0, usecols="A,C,H,I").iloc[:75]
     df["outcome"] -= 1
 
     df1 = df.loc[df["ID"].isin([int(subject) for subject in subjects1])]
@@ -203,8 +203,8 @@ if __name__ == "__main__":
         res2["ID"] = res2["ID"].str.replace("/2nd", "")
         df = pd.merge(res1, res2, on="ID", suffixes=("_1", "_2"))
         # Divide the results because the values are in log scale
-        df["volume(%)"] = df["volume(%)_2"] / df["volume(%)_1"]
-        df["z score"] = df["z score_2"] / df["z score_1"]
+        df["volume(%)"] = df["volume(%)_1"] # / df["volume(%)_2"]
+        df["z score"] = df["z score_1"] / df["z score_2"]
         df["Qa_diff"] = df["Qa2"] / df["Qa1"]
         df["outcome"] = df["outcome_1"]
         df = df[["ID", "Qa_diff", "outcome", "volume(%)", "z score"]].dropna()

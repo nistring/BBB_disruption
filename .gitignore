@@ -166,7 +166,8 @@ cython_debug/
 *.gz
 .vscode/
 results
-data
+data/*
+!data/preprocessing.py
 *.png
 *.xlsx
 *.csv
