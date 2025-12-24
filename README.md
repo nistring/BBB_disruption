@@ -5,6 +5,8 @@
 A disruption of Brain-blood-barrier is suspected for predicting the prognosis of patients, yet there haven't been many studies in terms of quantitative measurements of it.
 In general, brain parenchymas are often stained with Gd enhancement dye. This repo tries to validate the usefulness of T2 FLAIR enhanced image in calculating amount of enhancement and its associations with clinical outcomes.
 
+Published: https://doi.org/10.1016/j.resuscitation.2025.110940
+
 ## Methodology
 To quantify BBB disruption, pre-contrast and post-contrast FLAIR MRI images were processed to calculate the percentage volume (PV) of enhancement:
 
@@ -24,3 +26,6 @@ Pixels below the mean intensity in post-contrast images were removed to exclude 
 
 ### PV Calculation
 PV was defined as the percentage of enhanced voxels within brain tissue relative to the total brain tissue voxels.
+
+## Comment
+We acknowledge that reproducing the experimental results can be challenging, and the data cannot be provided due to privacy concerns. However, if you wish to reuse the code, please place your MRI sequences (.dicom) in the `data` directory and run `data/preprocessing.py`. This process will strip away the skull, extract the brain parenchyma, and construct a dataset in the Brain Imaging Data Structure (BIDS) format. After that, run `main.py` to quantify the contrast-enhanced volumes. We recommend carefully reading the paper's methodology section, and feel free to contact us with any questions.
